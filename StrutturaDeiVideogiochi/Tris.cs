@@ -1,4 +1,4 @@
-﻿internal class Program
+internal class Program
 {
     private static void Main(string[] args)
     {
@@ -11,7 +11,7 @@
             Console.Clear();
             for (int i = 0; i < 9; i++)
             {
-                if(i+1 == 1 || i + 1 == 3 || i + 1 == 5 || i + 1 == 7 || i + 1 == 9)
+                if (i + 1 == 1 || i + 1 == 3 || i + 1 == 5 || i + 1 == 7 || i + 1 == 9)
                 {
                     Console.BackgroundColor = ConsoleColor.DarkGray;
                     drawSign(buckets[i]);
@@ -44,7 +44,7 @@
             }
             Console.Write("\n\n\n\n");
             Console.ResetColor();
-            if(winCondition == false)
+            if (winCondition == false)
             {
                 Console.Write($"Tocca al giocatore {playerPlaying}\n");
                 Console.Write("Indica quale casella vuoi marcare: ");
@@ -68,7 +68,7 @@
                 buckets[0] == 2 && buckets[4] == 2 && buckets[8] == 2 || buckets[2] == 2 && buckets[4] == 2 && buckets[6] == 2)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("Vince il giocatore 2!");
+                Console.Write("\n\nVince il giocatore 2!");
                 winCondition = true;
                 Console.ResetColor();
                 break;
@@ -76,13 +76,13 @@
             if (buckets[0] != 0 && buckets[1] != 0 && buckets[2] != 0 && buckets[3] != 0 && buckets[4] != 0 && buckets[5] != 0 && buckets[6] != 0 && buckets[7] != 0 && buckets[8] != 0)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("Partita finita in pareggio!");
+                Console.Write("\n\nPartita finita in pareggio!");
                 winCondition = true;
                 Console.ResetColor();
                 break;
             }
             bool check = false;
-            while(check == false)
+            while (check == false)
             {
                 string input = Console.ReadLine();
                 switch (input)
