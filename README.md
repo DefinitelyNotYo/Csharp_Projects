@@ -21,9 +21,9 @@
       * E' stata implementata l'evocazione di un'unità tenendo conto delle caselle disponibili per l'evocazione 
         e quelle già occupate da altro
       * Ogni giocatore ha a disposizione 3 pool, che sono la mano, il campo e la pool d'estreazione. 
-        All'inizio della partita, il gioco estrae cinque unità e compone la mano del giocatore. Il giocatore può effettuare delle 
-        evocazioni dalla pool mano usando il comando apposito. Il gioco finisce quando la pool campo 
-        di almeno un giocatore e' vuota
+        All'inizio della partita, il gioco estrae cinque unità e compone la mano del giocatore. Il giocatore 
+        può effettuare delle evocazioni dalla pool mano usando il comando apposito. 
+        Il gioco finisce quando la pool campo di almeno un giocatore e' vuota
       * Ogni giocatore, una volta per turno, può utilizzare il comando rimescola mano per rimpolpare le unità che ha in mano
       * I comandi DEVONO essere digitati per intero (spazi inclusi) e vengono processati dal gioco premendo invio
       * I comandi funzionanti sono 'evoca unità', 'seleziona unità', 'rimescola mano' e 'passa turno'
