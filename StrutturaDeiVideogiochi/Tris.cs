@@ -73,6 +73,14 @@
                 Console.ResetColor();
                 break;
             }
+            if (buckets[0] != 0 && buckets[1] != 0 && buckets[2] != 0 && buckets[3] != 0 && buckets[4] != 0 && buckets[5] != 0 && buckets[6] != 0 && buckets[7] != 0 && buckets[8] != 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("Partita finita in pareggio!");
+                winCondition = true;
+                Console.ResetColor();
+                break;
+            }
             bool check = false;
             while(check == false)
             {
