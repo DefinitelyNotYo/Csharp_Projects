@@ -1,5 +1,3 @@
-﻿//Riprendi dalla non colorazione del generale in a5 sistemando la funzione checkbattlesquare [Ultima modifica: 27/01, 16:33]
-
 using System;
 using System.ComponentModel;
 using System.Reflection;
