@@ -4,10 +4,14 @@
       gioco particolarmente breve
 
 -GetOffMyDungeon.cs non è completo, manca l'implementazione del movimento e dell'attacco; ogni truppa avrebbe dovuto avere il suo range di movimento e di attacco, oltre che un'abilità unica pensata a monte.
+
    IMPORTANTE IMPORTANTE IMPORTANTE
+   
       * La prima cosa che si deve fare PRIMA di premere qualsiasi tasto è zoomare indietro, altrimenti il gioco non visualizza a schermo tutto come dovrebbe
       * Ogni comando può essere annullato scrivendo 'indietro'
+      
    Sono state implementati le seguenti features:
+   
       * Ogni truppa è contraddistinta da dei punteggi diversi
       * Ogni turno, un giocatore può spendere un tot mana pari a 100 * il round corrente (fino a un massimo di 500 unità al quinto round). Questa riserva di mana si ricarica ad ogni turno.
       * Ogni giocatore dispone di una riserva globale di mana pari a 1000 unità, esaurite le quali non potrà più richiamare delle truppe
