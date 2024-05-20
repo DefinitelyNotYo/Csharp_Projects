@@ -53,6 +53,7 @@ internal class Program
             {
                 Console.Write($"Tocca al giocatore {playerPlaying}\n");
             }
+            //Controllo se il giocatore 1 ha vinto
             if (buckets[0] == 1 && buckets[1] == 1 && buckets[2] == 1 || buckets[3] == 1 && buckets[4] == 1 && buckets[5] == 1 || buckets[6] == 1 && buckets[7] == 1 && buckets[8] == 1 ||
                 buckets[0] == 1 && buckets[3] == 1 && buckets[6] == 1 || buckets[1] == 1 && buckets[4] == 1 && buckets[7] == 1 || buckets[2] == 1 && buckets[5] == 1 && buckets[8] == 1 ||
                 buckets[0] == 1 && buckets[4] == 1 && buckets[8] == 1 || buckets[2] == 1 && buckets[4] == 1 && buckets[6] == 1)
@@ -63,6 +64,7 @@ internal class Program
                 Console.ResetColor();
                 break;
             }
+            //Controllo se il giocatore 2 ha vinto
             if (buckets[0] == 2 && buckets[1] == 2 && buckets[2] == 2 || buckets[3] == 2 && buckets[4] == 2 && buckets[5] == 2 || buckets[6] == 2 && buckets[7] == 2 && buckets[8] == 2 ||
                 buckets[0] == 2 && buckets[3] == 2 && buckets[6] == 2 || buckets[1] == 2 && buckets[4] == 2 && buckets[7] == 2 || buckets[2] == 2 && buckets[5] == 2 && buckets[8] == 2 ||
                 buckets[0] == 2 && buckets[4] == 2 && buckets[8] == 2 || buckets[2] == 2 && buckets[4] == 2 && buckets[6] == 2)
@@ -73,6 +75,7 @@ internal class Program
                 Console.ResetColor();
                 break;
             }
+            //Controllo se ci sono ancora caselle disponibili per giocare
             if (buckets[0] != 0 && buckets[1] != 0 && buckets[2] != 0 && buckets[3] != 0 && buckets[4] != 0 && buckets[5] != 0 && buckets[6] != 0 && buckets[7] != 0 && buckets[8] != 0)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -81,6 +84,7 @@ internal class Program
                 Console.ResetColor();
                 break;
             }
+            //Di seguito imposto un ciclo che continua a chiedere la casella dove inserire il simbolo relativo al giocatore finché non ne viene inserita una valida
             bool check = false;
             while (check == false)
             {
@@ -181,6 +185,7 @@ internal class Program
 
 
     }
+    //Questa funzione serve a disegnare il simbolo relativo al giocatore
     public static void drawSign(int bucket)
     {
         if (bucket == 1)
